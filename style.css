@@ -160,3 +160,9 @@ footer li img {
   height: 32px;
   margin-right: 8px;
 }
+#menssagem-error,
+#nome-error,
+#telefone-error,
+#email-error {
+  color: red;
+}

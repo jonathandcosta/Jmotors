@@ -118,7 +118,8 @@
           <div class="price">
             <span> De: </span><del>R$ 100.000,00</del>
             <span> Por: </span><strong>R$75.000</strong>
-          </div> <button type="button">Tenho Interesse</button>
+          </div>
+          <button type="button">Tenho Interesse</button>
         </li>
         <li class="item-central">
           <!--MEDIDA USADA PARA CENTRALIZAR CASO TENHA QUANTIDADE IMPAR-->
@@ -128,7 +129,8 @@
           <div class="price">
             <span> De: </span><del>R$ 100.000,00</del>
             <span> Por: </span><strong>R$75.000</strong>
-          </div> <button type="button">Tenho Interesse</button>
+          </div>
+          <button type="button">Tenho Interesse</button>
         </li>
         <li>
           <img src="./assets/images/carro-bmw.png" alt="Carro BMW conversível">
@@ -137,7 +139,8 @@
           <div class="price">
             <span> De: </span><del>R$ 100.000,00</del>
             <span> Por: </span><strong>R$75.000</strong>
-          </div> <button type="button">Tenho Interesse</button>
+          </div>
+          <button type="button">Tenho Interesse</button>
         </li>
         <li>
           <img src="./assets/images/carro-bmw.png" alt="Carro BMW conversível">
@@ -146,7 +149,8 @@
           <div class="price">
             <span> De: </span><del>R$ 100.000,00</del>
             <span> Por: </span><strong>R$75.000</strong>
-          </div> <button type="button">Tenho Interesse</button>
+          </div>
+          <button type="button">Tenho Interesse</button>
         </li>
         <li class="item-central">
           <!--MEDIDA USADA PARA CENTRALIZAR CASO TENHA QUANTIDADE IMPAR-->
@@ -156,7 +160,8 @@
           <div class="price">
             <span> De: </span><del>R$ 100.000,00</del>
             <span> Por: </span><strong>R$75.000</strong>
-          </div> <button type="button">Tenho Interesse</button>
+          </div>
+          <button type="button">Tenho Interesse</button>
         </li>
       </ul>
     </div>
@@ -169,29 +174,30 @@
       <form>
         <div class="form-campo">
           <label for="nome">Nome:</label>
-          <input type="text" id="nome" required>
+          <input type="text" id="nome" name="nome">
         </div>
         <div class="form-campo">
           <label for="telefone">Telefone:</label>
-          <input type="tel" id="telefone" required>
+          <input type="tel" id="telefone" name="telefone">
         </div>
         <div class="form-campo">
           <label for="email">E-mail:</label>
-          <input type="email" id="email" required>
+          <input type="email" id="email" name="email">
         </div>
         <div class="form-campo">
           <label for="veiculo-interesse">Veiculo de Interesse:</label>
-          <input type="text" id="veiculo-interesse" required>
+          <input type="text" id="veiculoInteresse" name="veiculoInteresse">
         </div>
         <div class="form-campo">
           <label for="menssagem">Menssagem</label>
-          <textarea type="text" id="menssagem"></textarea>
+          <textarea type="text" id="menssagem" name="menssagem"></textarea>
         </div>
         <button type="submit">Enviar</button>
       </form>
     </div>
   </section>
-  <!--SESSÃO PROMOÇÕES-->
+
+  <!--SESSÃO RODAPÉ-->
   <footer>
     <div class="container container-flex">
       <p>
@@ -209,19 +215,11 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-  <script>$(document).ready(function () {
-      $('#carousel-imagens').slick({
-        autoplay: true,
-      });
-
-      $(".menu-hamburguer").click(function () {
-        $('nav').slideToggle();
-      })
-    })
-  </script>
+  <script src="./js/plugins/jquery.mask.min.js"></script>
+  <script src="./js/plugins/jquery.validate.min.js"></script>
+  <script src="./js/plugins/messages_pt_BR.min.js"></script>
 </body>
-<script src="./main.js"></script>
 
+<script src="./js/main.js"></script>
 
 </html>
